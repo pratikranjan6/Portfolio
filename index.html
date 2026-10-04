@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratik Ranjan Bishwal — Full Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Pratik Ranjan Bishwal — Full Stack Developer crafting modern, performant web applications with cutting-edge technologies.">
+  <meta name="author" content="Pratik Ranjan Bishwal">
+  <meta name="keywords" content="full stack developer, portfolio, web developer, software engineer, Pratik Ranjan Bishwal">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pratik Ranjan Bishwal — Full Stack Developer">
+  <meta property="og:description" content="Full Stack Developer crafting modern, performant web applications.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-spinner"></div>
+    <div class="preloader-text">Loading...</div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo"><span>PRB</span>.dev</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════ -->
+  <section class="parallax-section" id="hero">
+    <div class="parallax-bg" data-speed="0.3" style="background-image: url('assets/images/hero-bg.jpg');"></div>
+    <div class="parallax-overlay"></div>
+    <div class="particles-container"></div>
+
+    <div class="section-content hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Available for opportunities
+      </div>
+
+      <h1 class="hero-title">
+        <span class="name-line">Hi, I'm</span>
+        <span class="name-line gradient-text">Pratik Ranjan</span>
+        <span class="name-line gradient-text">Bishwal</span>
+      </h1>
+
+      <p class="hero-subtitle">Full Stack Developer — Building beautiful, performant digital experiences from front to back.</p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          View My Work
+          <span>→</span>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       ABOUT SECTION
+       ═══════════════════════════════════ -->
+  <section class="parallax-section" id="about">
+    <div class="parallax-bg" data-speed="0.25" style="background-image: url('assets/images/about-bg.jpg');"></div>
+    <div class="parallax-overlay"></div>
+
+    <div class="section-content">
+      <div class="section-header reveal">
+        <h2 class="gradient-text">About Me</h2>
+        <div class="section-divider"></div>
+        <p class="subtitle">Getting to know the developer behind the code</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-left">
+          <div class="about-avatar">
+            👨‍💻
+          </div>
+        </div>
+
+        <div class="about-text reveal-right">
+          <h3>Crafting Digital Experiences</h3>
+          <p>
+            I'm <strong>Pratik Ranjan Bishwal</strong>, a passionate Full Stack Developer who loves transforming ideas into elegant, functional web applications. I thrive at the intersection of design and engineering, where creativity meets technical precision.
+          </p>
+          <p>
+            With a deep curiosity for emerging technologies and a relentless drive for clean, scalable code, I build solutions that don't just work — they inspire. From interactive frontends to robust backend architectures, I bring ideas to life end-to-end.
+          </p>
+
+          <div class="about-tags">
+            <span class="about-tag">Problem Solver</span>
+            <span class="about-tag">Open Source Enthusiast</span>
+            <span class="about-tag">UI/UX Advocate</span>
+            <span class="about-tag">Lifelong Learner</span>
+            <span class="about-tag">Team Player</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-stats reveal">
+        <div class="stat-card">
+          <div class="stat-number" data-target="15" data-suffix="+">0</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="8" data-suffix="+">0</div>
+          <div class="stat-label">Technologies Mastered</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="500" data-suffix="+">0</div>
+          <div class="stat-label">Commits This Year</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SKILLS SECTION
+       ═══════════════════════════════════ -->
+  <section class="parallax-section" id="skills">
+    <div class="parallax-bg" data-speed="0.35" style="background-image: url('assets/images/projects-bg.jpg');"></div>
+    <div class="parallax-overlay"></div>
+
+    <div class="section-content">
+      <div class="section-header reveal">
+        <h2 class="gradient-text">Skills & Tech Stack</h2>
+        <div class="section-divider"></div>
+        <p class="subtitle">Technologies I work with to bring ideas to life</p>
+      </div>
+
+      <div class="skills-grid stagger-children">
+        <!-- Frontend -->
+        <div class="skill-category reveal" style="--stagger: 0;">
+          <div class="skill-category-header">
+            <div class="skill-icon">🎨</div>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-dot"></span>HTML5</div>
+            <div class="skill-item"><span class="skill-dot"></span>CSS3 / SASS</div>
+            <div class="skill-item"><span class="skill-dot"></span>JavaScript (ES6+)</div>
+            <div class="skill-item"><span class="skill-dot"></span>React.js</div>
+            <div class="skill-item"><span class="skill-dot"></span>Next.js</div>
+            <div class="skill-item"><span class="skill-dot"></span>TypeScript</div>
+            <div class="skill-item"><span class="skill-dot"></span>Tailwind CSS</div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category reveal" style="--stagger: 1;">
+          <div class="skill-category-header">
+            <div class="skill-icon">⚙️</div>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-dot"></span>Node.js</div>
+            <div class="skill-item"><span class="skill-dot"></span>Express.js</div>
+            <div class="skill-item"><span class="skill-dot"></span>Python</div>
+            <div class="skill-item"><span class="skill-dot"></span>REST APIs</div>
+            <div class="skill-item"><span class="skill-dot"></span>GraphQL</div>
+            <div class="skill-item"><span class="skill-dot"></span>Java</div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-category reveal" style="--stagger: 2;">
+          <div class="skill-category-header">
+            <div class="skill-icon">🗄️</div>
+            <h3>Database & Cloud</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-dot"></span>MongoDB</div>
+            <div class="skill-item"><span class="skill-dot"></span>PostgreSQL</div>
+            <div class="skill-item"><span class="skill-dot"></span>MySQL</div>
+            <div class="skill-item"><span class="skill-dot"></span>Firebase</div>
+            <div class="skill-item"><span class="skill-dot"></span>AWS</div>
+            <div class="skill-item"><span class="skill-dot"></span>Docker</div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category reveal" style="--stagger: 3;">
+          <div class="skill-category-header">
+            <div class="skill-icon">🛠️</div>
+            <h3>Tools & Workflow</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-dot"></span>Git & GitHub</div>
+            <div class="skill-item"><span class="skill-dot"></span>VS Code</div>
+            <div class="skill-item"><span class="skill-dot"></span>Figma</div>
+            <div class="skill-item"><span class="skill-dot"></span>Postman</div>
+            <div class="skill-item"><span class="skill-dot"></span>Linux</div>
+            <div class="skill-item"><span class="skill-dot"></span>CI/CD</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       PROJECTS SECTION
+       ═══════════════════════════════════ -->
+  <section class="parallax-section" id="projects">
+    <div class="parallax-bg" data-speed="0.3" style="background-image: url('assets/images/projects-bg.jpg');"></div>
+    <div class="parallax-overlay"></div>
+
+    <div class="section-content">
+      <div class="section-header reveal">
+        <h2 class="gradient-text">Featured Projects</h2>
+        <div class="section-divider"></div>
+        <p class="subtitle">A selection of projects I've built and contributed to</p>
+      </div>
+
+      <div class="projects-grid stagger-children">
+        <!-- Project 1 -->
+        <div class="project-card reveal" style="--stagger: 0;">
+          <div class="project-preview" style="background: linear-gradient(135deg, #0d1b2a, #1b263b);">
+            <div class="project-preview-inner">🛒</div>
+            <div class="project-tech-badges">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">MongoDB</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce Platform</h3>
+            <p>A full-featured e-commerce platform with real-time inventory management, secure payment integration, and an intuitive admin dashboard.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">View Live <span class="arrow">→</span></a>
+              <a href="#" class="project-link">Source Code <span class="arrow">→</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal" style="--stagger: 1;">
+          <div class="project-preview" style="background: linear-gradient(135deg, #1a1a2e, #16213e);">
+            <div class="project-preview-inner">💬</div>
+            <div class="project-tech-badges">
+              <span class="tech-badge">Next.js</span>
+              <span class="tech-badge">Socket.io</span>
+              <span class="tech-badge">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Real-Time Chat App</h3>
+            <p>A modern chat application with real-time messaging, group channels, file sharing, and end-to-end encryption.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">View Live <span class="arrow">→</span></a>
+              <a href="#" class="project-link">Source Code <span class="arrow">→</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal" style="--stagger: 2;">
+          <div class="project-preview" style="background: linear-gradient(135deg, #10002b, #240046);">
+            <div class="project-preview-inner">📊</div>
+            <div class="project-tech-badges">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">AWS</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Analytics Dashboard</h3>
+            <p>An interactive analytics dashboard with dynamic data visualization, custom report generation, and real-time metric tracking.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">View Live <span class="arrow">→</span></a>
+              <a href="#" class="project-link">Source Code <span class="arrow">→</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal" style="--stagger: 3;">
+          <div class="project-preview" style="background: linear-gradient(135deg, #003049, #023e8a);">
+            <div class="project-preview-inner">🤖</div>
+            <div class="project-tech-badges">
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">OpenAI</span>
+              <span class="tech-badge">Express</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>AI Content Generator</h3>
+            <p>An AI-powered content generation tool that creates blog posts, social media content, and marketing copy using advanced language models.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">View Live <span class="arrow">→</span></a>
+              <a href="#" class="project-link">Source Code <span class="arrow">→</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       EXPERIENCE SECTION
+       ═══════════════════════════════════ -->
+  <section class="parallax-section" id="experience">
+    <div class="parallax-bg" data-speed="0.2" style="background-image: url('assets/images/projects-bg.jpg');"></div>
+    <div class="parallax-overlay"></div>
+
+    <div class="section-content">
+      <div class="section-header reveal">
+        <h2 class="gradient-text">Experience</h2>
+        <div class="section-divider"></div>
+        <p class="subtitle">My professional journey and key milestones</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2025 — Present</div>
+            <h3>Full Stack Developer</h3>
+            <div class="timeline-company">Freelance / Personal Projects</div>
+            <p>Building end-to-end web applications for clients and personal ventures. Focused on modern React/Next.js frontends with Node.js backends, deploying on cloud platforms.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">React</span>
+              <span class="timeline-tag">Node.js</span>
+              <span class="timeline-tag">MongoDB</span>
+              <span class="timeline-tag">AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2024 — 2025</div>
+            <h3>Frontend Developer Intern</h3>
+            <div class="timeline-company">Tech Startup</div>
+            <p>Developed responsive UI components and implemented complex user interactions. Collaborated with the design team to create pixel-perfect interfaces and improved page performance by 40%.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">JavaScript</span>
+              <span class="timeline-tag">React</span>
+              <span class="timeline-tag">Figma</span>
+              <span class="timeline-tag">REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2023 — 2024</div>
+            <h3>Open Source Contributor</h3>
+            <div class="timeline-company">GitHub Community</div>
+            <p>Actively contributed to open source projects, fixing bugs, adding features, and improving documentation. Built strong collaboration skills through code reviews and community discussions.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Git</span>
+              <span class="timeline-tag">Open Source</span>
+              <span class="timeline-tag">Documentation</span>
+              <span class="timeline-tag">Code Review</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       CONTACT SECTION
+       ═══════════════════════════════════ -->
+  <section class="parallax-section" id="contact">
+    <div class="parallax-bg" data-speed="0.2" style="background-image: url('assets/images/contact-bg.jpg');"></div>
+    <div class="parallax-overlay"></div>
+
+    <div class="section-content">
+      <div class="section-header reveal">
+        <h2 class="gradient-text">Get In Touch</h2>
+        <div class="section-divider"></div>
+        <p class="subtitle">Have a project in mind? Let's build something amazing together</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info reveal-left">
+          <h3>Let's Connect</h3>
+          <p>I'm always excited to discuss new projects, creative ideas, or opportunities to be part of something great. Feel free to reach out!</p>
+
+          <div class="contact-channels">
+            <a href="mailto:pratik@example.com" class="contact-channel">
+              <div class="channel-icon">📧</div>
+              <div>
+                <div class="channel-label">Email</div>
+                <div class="channel-value">pratik@example.com</div>
+              </div>
+            </a>
+            <a href="#" class="contact-channel">
+              <div class="channel-icon">📍</div>
+              <div>
+                <div class="channel-label">Location</div>
+                <div class="channel-value">India</div>
+              </div>
+            </a>
+            <a href="#" class="contact-channel">
+              <div class="channel-icon">🟢</div>
+              <div>
+                <div class="channel-label">Availability</div>
+                <div class="channel-value">Open to opportunities</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/pratikranjan6" class="social-link" target="_blank" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/pratikranjanbishwal" class="social-link" target="_blank" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://twitter.com/pratikranjan" class="social-link" target="_blank" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal-right" id="contact-form">
+          <div class="form-group">
+            <label for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Your Email</label>
+            <input type="email" id="contact-email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" placeholder="Project Inquiry">
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Designed & Built with <span class="heart">♥</span> by Pratik Ranjan Bishwal — &copy; 2026</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
